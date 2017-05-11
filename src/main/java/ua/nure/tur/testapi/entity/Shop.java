@@ -1,7 +1,5 @@
 package ua.nure.tur.testapi.entity;
 
-
-
 public class Shop {
 
     private int id;

@@ -1,7 +1,6 @@
 package ua.nure.tur.testapi.util;
 
-import ua.nure.tur.testapi.entity.Shop;
-import ua.nure.tur.testapi.entity.User;
+import ua.nure.tur.testapi.entity.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,33 +9,151 @@ import java.util.Collection;
 
 public class Mapper {
 
-    public static Collection<Shop> toShops(ResultSet resultSet) throws SQLException {
-        ArrayList<Shop> shops = new ArrayList<>();
+    public static Collection<User> toUsers(ResultSet rs) throws SQLException {
 
-        while (resultSet.next())
+        ArrayList<User> items = new ArrayList<>();
+
+        while (rs.next())
         {
-            int id = resultSet.getInt("id");
-            String name = resultSet.getString("name");
-            String price = resultSet.getString("address");
+            User item = new User();
 
-            shops.add(new Shop(id, name, price));
+            item.setId(rs.getInt("id"));
+            item.setUsername(rs.getString("username"));
+            item.setPassword(rs.getString("password"));
+            item.setEmail(rs.getString("email"));
+            item.setRole(rs.getString("role"));
+            item.setFirstname(rs.getString("firstname"));
+            item.setSecondname(rs.getString("secondname"));
+
+            items.add(item);
         }
-        return shops;
-
+        return items;
     }
 
-    public static Collection<User> toUsers(ResultSet resultSet) throws SQLException {
 
-        ArrayList<User> users = new ArrayList<>();
+    public static Collection<State> toStates(ResultSet rs) throws SQLException {
 
-        while (resultSet.next())
+        ArrayList<State> items = new ArrayList<>();
+
+        while (rs.next())
         {
-            int id = resultSet.getInt("id");
-            String login = resultSet.getString("login");
-            String password = resultSet.getString("password");
+            State item = new State();
 
-            users.add(new User(id, login, password));
+            item.setId(rs.getInt("id"));
+            item.setUserId(rs.getInt("user_id"));
+            item.setX(rs.getDouble("location_x"));
+            item.setY(rs.getDouble("location_y"));
+            item.setTemperature(rs.getDouble("temperature"));
+            item.setBreathing(rs.getInt("breathing"));
+            item.setHearth(rs.getInt("hearth"));
+
+            items.add(item);
         }
-        return users;
+        return items;
     }
+
+    public static Collection<Photo> toPhotos(ResultSet rs) throws SQLException {
+
+        ArrayList<Photo> items = new ArrayList<>();
+
+        while (rs.next())
+        {
+            Photo item = new Photo();
+
+            item.setId(rs.getInt("id"));
+            item.setUserId(rs.getInt("user_id"));
+            item.setCameraId(rs.getInt("camera_id"));
+            item.setPhoto(rs.getString("photo"));
+
+            items.add(item);
+        }
+        return items;
+    }
+
+
+    public static Collection<Permission> toPermissions(ResultSet rs) throws SQLException {
+
+        ArrayList<Permission> items = new ArrayList<>();
+
+        while (rs.next())
+        {
+            Permission item = new Permission();
+
+            item.setId(rs.getInt("id"));
+            item.setUserFrom(rs.getInt("user_from"));
+            item.setUserTo(rs.getInt("user_to"));
+            item.setLocation(rs.getBoolean("location"));
+            item.setBiometry(rs.getBoolean("biometry"));
+            item.setPhoto(rs.getBoolean("photo"));
+
+            items.add(item);
+        }
+        return items;
+    }
+
+
+    public static Collection<Notification> toNotifications(ResultSet rs) throws SQLException {
+
+        ArrayList<Notification> items = new ArrayList<>();
+
+        while (rs.next())
+        {
+            Notification item = new Notification();
+
+            item.setId(rs.getInt("id"));
+            item.setUserId(rs.getInt("user_id"));
+            item.setMessage(rs.getString("message"));
+
+            items.add(item);
+        }
+        return items;
+    }
+
+
+    public static Collection<Camera> toCameras(ResultSet rs) throws SQLException {
+
+        ArrayList<Camera> items = new ArrayList<>();
+
+        while (rs.next())
+        {
+            Camera item = new Camera();
+
+            item.setId(rs.getInt("id"));
+            item.setX(rs.getDouble("location_x"));
+            item.setY(rs.getDouble("location_y"));
+
+            items.add(item);
+        }
+        return items;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class DbConnector {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/business?useSSL=false";
+    private static final String URL = "jdbc:mysql://localhost:3306/skiing_resort?useSSL=false";
     private static final String USER = "root";
     private static final String PASSWORD = "root";
 
