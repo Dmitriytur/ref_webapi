@@ -14,9 +14,9 @@ public class CustomAuthenticationManager implements AuthenticationManager {
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         UserService userService = new UserService();
-        String login = authentication.getName();
+        String username = authentication.getName();
         String password = authentication.getCredentials().toString();
-        User user = userService.findUserByLogin(login);
+        User user = userService.findUserByUsername(username);
 
         if (user == null) {
             throw new BadCredentialsException("Username not found.");
