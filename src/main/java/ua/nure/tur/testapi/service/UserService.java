@@ -13,4 +13,8 @@ public class UserService {
     public User findUserByUsername(String username){
         return userRepository.findUserByUserName(username);
     }
+
+    public void addUser(User user){
+        userRepository.Create(user);
+    }
 }

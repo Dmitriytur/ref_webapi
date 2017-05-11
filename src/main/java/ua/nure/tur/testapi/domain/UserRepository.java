@@ -70,17 +70,16 @@ public class UserRepository implements UserDao{
             Connection connection = DbConnector.getConnection();
 
             String query = "insert into users " +
-                    "(`username`, `password`, `email`, `role`, `firstname`, `secondname`) " +
-                    "VALUES (?, ?, ?, ?, ?, ?)";
+                    "(`username`, `password`, `email`, `firstname`, `secondname`) " +
+                    "VALUES (?, ?, ?, ?, ?)";
 
             PreparedStatement statement = connection.prepareStatement(query);
 
             statement.setString(1, item.getUsername());
             statement.setString(2, item.getPassword());
             statement.setString(3, item.getEmail());
-            statement.setString(4, item.getRole());
-            statement.setString(5, item.getFirstname());
-            statement.setString(6, item.getSecondname());
+            statement.setString(4, item.getFirstname());
+            statement.setString(5, item.getSecondname());
 
             statement.executeUpdate();
 

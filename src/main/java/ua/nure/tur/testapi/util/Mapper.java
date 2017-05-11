@@ -21,7 +21,6 @@ public class Mapper {
             item.setUsername(rs.getString("username"));
             item.setPassword(rs.getString("password"));
             item.setEmail(rs.getString("email"));
-            item.setRole(rs.getString("role"));
             item.setFirstname(rs.getString("firstname"));
             item.setSecondname(rs.getString("secondname"));
 
@@ -46,6 +45,7 @@ public class Mapper {
             item.setTemperature(rs.getDouble("temperature"));
             item.setBreathing(rs.getInt("breathing"));
             item.setHearth(rs.getInt("hearth"));
+            item.setTime(rs.getDate("time"));
 
             items.add(item);
         }
@@ -103,6 +103,8 @@ public class Mapper {
             item.setId(rs.getInt("id"));
             item.setUserId(rs.getInt("user_id"));
             item.setMessage(rs.getString("message"));
+            item.setTime(rs.getDate("time"));
+            item.setRead(rs.getBoolean("is_read"));
 
             items.add(item);
         }

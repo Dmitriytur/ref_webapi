@@ -1,5 +1,7 @@
 package ua.nure.tur.testapi.entity;
 
+import java.util.Date;
+
 public class State {
 
     private int id;
@@ -9,10 +11,11 @@ public class State {
     private double temperature;
     private int breathing;
     private int hearth;
+    private Date time;
 
     public State() {}
 
-    public State(int id, int userId, double x, double y, double temperature, int breathing, int hearth) {
+    public State(int id, int userId, double x, double y, double temperature, int breathing, int hearth, Date time) {
         this.id = id;
         this.userId = userId;
         this.x = x;
@@ -20,6 +23,7 @@ public class State {
         this.temperature = temperature;
         this.breathing = breathing;
         this.hearth = hearth;
+        this.time = time;
     }
 
     public int getId() {
@@ -76,5 +80,13 @@ public class State {
 
     public void setHearth(int hearth) {
         this.hearth = hearth;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
     }
 }

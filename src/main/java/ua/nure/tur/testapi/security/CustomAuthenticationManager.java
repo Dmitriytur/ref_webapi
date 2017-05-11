@@ -14,6 +14,7 @@ public class CustomAuthenticationManager implements AuthenticationManager {
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         UserService userService = new UserService();
+
         String username = authentication.getName();
         String password = authentication.getCredentials().toString();
         User user = userService.findUserByUsername(username);
@@ -26,6 +27,6 @@ public class CustomAuthenticationManager implements AuthenticationManager {
             throw new BadCredentialsException("Wrong password.");
         }
 
-        return new UsernamePasswordAuthenticationToken(user, password, Collections.emptyList());
+        return new UsernamePasswordAuthenticationToken(username, password, Collections.emptyList());
     }
 }
