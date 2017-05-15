@@ -1,6 +1,6 @@
 package ua.nure.tur.testapi.entity;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class State {
 
@@ -14,7 +14,6 @@ public class State {
     private Date time;
 
     public State() {}
-
     public State(int id, int userId, double x, double y, double temperature, int breathing, int hearth, Date time) {
         this.id = id;
         this.userId = userId;

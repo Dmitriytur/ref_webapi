@@ -6,7 +6,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import ua.nure.tur.testapi.entity.User;
-import ua.nure.tur.testapi.service.UserService;
+import ua.nure.tur.testapi.domain.UserService;
 
 import java.util.Collections;
 

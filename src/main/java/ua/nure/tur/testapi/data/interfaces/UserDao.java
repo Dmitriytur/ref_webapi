@@ -1,4 +1,4 @@
-package ua.nure.tur.testapi.domain;
+package ua.nure.tur.testapi.data.interfaces;
 
 import ua.nure.tur.testapi.entity.User;
 

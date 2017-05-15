@@ -1,4 +1,4 @@
-package ua.nure.tur.testapi.domain;
+package ua.nure.tur.testapi.data.interfaces;
 
 import java.util.Collection;
 

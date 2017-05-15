@@ -1,4 +1,4 @@
-package ua.nure.tur.testapi.util;
+package ua.nure.tur.testapi.data.util;
 
 import ua.nure.tur.testapi.entity.*;
 

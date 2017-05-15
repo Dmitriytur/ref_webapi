@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import ua.nure.tur.testapi.entity.User;
-import ua.nure.tur.testapi.service.UserService;
+import ua.nure.tur.testapi.domain.UserService;
 
 @RestController
 public class AccountController {
@@ -15,7 +15,7 @@ public class AccountController {
     private UserService userService;
 
 
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     public void register(@RequestBody User user){
         userService.addUser(user);
     }

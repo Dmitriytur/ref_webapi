@@ -1,6 +1,6 @@
 package ua.nure.tur.testapi.entity;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Notification {
 

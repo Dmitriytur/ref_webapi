@@ -1,10 +1,11 @@
-package ua.nure.tur.testapi.domain;
+package ua.nure.tur.testapi.data.sqldao;
 
 
 import org.springframework.stereotype.Repository;
+import ua.nure.tur.testapi.data.interfaces.UserDao;
 import ua.nure.tur.testapi.entity.User;
-import ua.nure.tur.testapi.util.DbConnector;
-import ua.nure.tur.testapi.util.Mapper;
+import ua.nure.tur.testapi.data.util.DbConnector;
+import ua.nure.tur.testapi.data.util.Mapper;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,11 +15,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Repository
-public class UserRepository implements UserDao{
+public class SqlUserDao implements UserDao {
 
     @Override
     public Collection<User> GetAllItems() {
-        Collection<User> shops;
+        Collection<User> users;
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -28,15 +29,15 @@ public class UserRepository implements UserDao{
 
             ResultSet resultSet = statement.executeQuery();
 
-            shops = Mapper.toUsers(resultSet);
+            users = Mapper.toUsers(resultSet);
 
             connection.close();
         }
         catch (SQLException ex){
             System.err.println(ex.getMessage());
-            shops = new ArrayList<>();
+            users = new ArrayList<>();
         }
-        return shops;
+        return users;
     }
 
     @Override
@@ -92,12 +93,52 @@ public class UserRepository implements UserDao{
 
     @Override
     public void Update(User item) {
+        try {
+            Connection connection = DbConnector.getConnection();
 
+            String query = "UPDATE `users`\n" +
+                    "SET\n" +
+                    "`password` = ?,\n" +
+                    "`email` = ?>,\n" +
+                    "`firstname` = ?,\n" +
+                    "`secondname` = ?\n" +
+                    "WHERE `id` = ?;\n";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+
+            statement.setString(1, item.getPassword());
+            statement.setString(2, item.getEmail());
+            statement.setString(3, item.getFirstname());
+            statement.setString(4, item.getSecondname());
+            statement.setInt(5, item.getId());
+
+            statement.executeUpdate();
+
+            connection.close();
+        }
+        catch (SQLException ex){
+            System.err.println(ex.getMessage());
+        }
     }
 
     @Override
     public void Delete(int id) {
+        try {
+            Connection connection = DbConnector.getConnection();
 
+            String query = "delete form users where id = ?";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+
+            statement.setInt(1, id);
+
+            statement.executeUpdate();
+
+            connection.close();
+        }
+        catch (SQLException ex){
+            System.err.println(ex.getMessage());
+        }
     }
 
     @Override
