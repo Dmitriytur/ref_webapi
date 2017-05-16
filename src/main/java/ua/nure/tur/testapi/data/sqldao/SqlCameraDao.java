@@ -18,7 +18,7 @@ import java.util.Collection;
 public class SqlCameraDao implements CameraDao {
 
     @Override
-    public Collection<Camera> GetAllItems() {
+    public Collection<Camera> getAllItems() {
         Collection<Camera> Cameras;
         try {
             Connection connection = DbConnector.getConnection();
@@ -41,7 +41,7 @@ public class SqlCameraDao implements CameraDao {
     }
 
     @Override
-    public Camera GetItem(int id) {
+    public Camera getItem(int id) {
         Camera Camera = null;
 
         try {
@@ -66,7 +66,7 @@ public class SqlCameraDao implements CameraDao {
     }
 
     @Override
-    public void Create(Camera item) {
+    public void create(Camera item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -90,7 +90,7 @@ public class SqlCameraDao implements CameraDao {
     }
 
     @Override
-    public void Update(Camera item) {
+    public void update(Camera item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -116,7 +116,7 @@ public class SqlCameraDao implements CameraDao {
     }
 
     @Override
-    public void Delete(int id) {
+    public void delete(int id) {
         try {
             Connection connection = DbConnector.getConnection();
 

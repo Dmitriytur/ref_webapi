@@ -18,7 +18,7 @@ import java.util.Collection;
 public class SqlUserDao implements UserDao {
 
     @Override
-    public Collection<User> GetAllItems() {
+    public Collection<User> getAllItems() {
         Collection<User> users;
         try {
             Connection connection = DbConnector.getConnection();
@@ -41,7 +41,7 @@ public class SqlUserDao implements UserDao {
     }
 
     @Override
-    public User GetItem(int id) {
+    public User getItem(int id) {
         User user = null;
 
         try {
@@ -66,7 +66,7 @@ public class SqlUserDao implements UserDao {
     }
 
     @Override
-    public void Create(User item) {
+    public void create(User item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -92,7 +92,7 @@ public class SqlUserDao implements UserDao {
     }
 
     @Override
-    public void Update(User item) {
+    public void update(User item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -122,7 +122,7 @@ public class SqlUserDao implements UserDao {
     }
 
     @Override
-    public void Delete(int id) {
+    public void delete(int id) {
         try {
             Connection connection = DbConnector.getConnection();
 

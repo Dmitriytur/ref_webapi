@@ -1,24 +1,26 @@
 package ua.nure.tur.testapi.data.sqldao;
 
 
-import org.springframework.stereotype.Repository;
-import ua.nure.tur.testapi.data.interfaces.NotificationDao;
-import ua.nure.tur.testapi.entity.Notification;
-import ua.nure.tur.testapi.data.util.DbConnector;
-import ua.nure.tur.testapi.data.util.Mapper;
+        import org.springframework.stereotype.Repository;
+        import ua.nure.tur.testapi.data.interfaces.NotificationDao;
+        import ua.nure.tur.testapi.entity.Notification;
+        import ua.nure.tur.testapi.data.util.DbConnector;
+        import ua.nure.tur.testapi.data.util.Mapper;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
+        import java.sql.Connection;
+        import java.sql.PreparedStatement;
+        import java.sql.ResultSet;
+        import java.sql.SQLException;
+        import java.text.DateFormat;
+        import java.text.SimpleDateFormat;
+        import java.util.ArrayList;
+        import java.util.Collection;
 
 @Repository
 public class SqlNotificationDao implements NotificationDao {
 
     @Override
-    public Collection<Notification> GetAllItems() {
+    public Collection<Notification> getAllItems() {
         Collection<Notification> Notifications;
         try {
             Connection connection = DbConnector.getConnection();
@@ -41,7 +43,7 @@ public class SqlNotificationDao implements NotificationDao {
     }
 
     @Override
-    public Notification GetItem(int id) {
+    public Notification getItem(int id) {
         Notification Notification = null;
 
         try {
@@ -66,7 +68,7 @@ public class SqlNotificationDao implements NotificationDao {
     }
 
     @Override
-    public void Create(Notification item) {
+    public void create(Notification item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -79,9 +81,11 @@ public class SqlNotificationDao implements NotificationDao {
 
             PreparedStatement statement = connection.prepareStatement(query);
 
+            DateFormat dateFormat = Mapper.getDateFormat();
+
             statement.setInt(1, item.getUserId());
             statement.setString(2, item.getMessage());
-            statement.setDate(3, item.getTime());
+            statement.setString(3, dateFormat.format(item.getTime()));
             statement.setBoolean(4, item.isRead());
 
             statement.executeUpdate();
@@ -94,7 +98,7 @@ public class SqlNotificationDao implements NotificationDao {
     }
 
     @Override
-    public void Update(Notification item) {
+    public void update(Notification item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -108,9 +112,11 @@ public class SqlNotificationDao implements NotificationDao {
 
             PreparedStatement statement = connection.prepareStatement(query);
 
+            DateFormat dateFormat = Mapper.getDateFormat();
+
             statement.setInt(1, item.getUserId());
             statement.setString(2, item.getMessage());
-            statement.setDate(3, item.getTime());
+            statement.setString(3, dateFormat.format(item.getTime()));
             statement.setBoolean(4, item.isRead());
             statement.setInt(5, item.getId());
 
@@ -124,7 +130,7 @@ public class SqlNotificationDao implements NotificationDao {
     }
 
     @Override
-    public void Delete(int id) {
+    public void delete(int id) {
         try {
             Connection connection = DbConnector.getConnection();
 

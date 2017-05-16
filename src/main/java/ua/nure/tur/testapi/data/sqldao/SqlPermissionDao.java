@@ -18,7 +18,7 @@ import java.util.Collection;
 public class SqlPermissionDao implements PermissionDao {
 
     @Override
-    public Collection<Permission> GetAllItems() {
+    public Collection<Permission> getAllItems() {
         Collection<Permission> Permissions;
         try {
             Connection connection = DbConnector.getConnection();
@@ -41,7 +41,7 @@ public class SqlPermissionDao implements PermissionDao {
     }
 
     @Override
-    public Permission GetItem(int id) {
+    public Permission getItem(int id) {
         Permission Permission = null;
 
         try {
@@ -66,17 +66,18 @@ public class SqlPermissionDao implements PermissionDao {
     }
 
     @Override
-    public void Create(Permission item) {
+    public void create(Permission item) {
         try {
             Connection connection = DbConnector.getConnection();
 
             String query = "insert into Permissions " +
-                    "(user_from`,\n" +
+                    "(`user_from`,\n" +
                     "`user_to`,\n" +
                     "`location`,\n" +
                     "`biometry`,\n" +
                     "`photo`)\n" +
-                    "VALUES (?, ?, ?, ?, ?)";
+                    "VALUES (?, ?, ?, ?, ?);";
+
 
             PreparedStatement statement = connection.prepareStatement(query);
 
@@ -96,7 +97,7 @@ public class SqlPermissionDao implements PermissionDao {
     }
 
     @Override
-    public void Update(Permission item) {
+    public void update(Permission item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -128,7 +129,7 @@ public class SqlPermissionDao implements PermissionDao {
     }
 
     @Override
-    public void Delete(int id) {
+    public void delete(int id) {
         try {
             Connection connection = DbConnector.getConnection();
 

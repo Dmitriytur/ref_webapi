@@ -4,13 +4,13 @@ import java.util.Collection;
 
 public interface Dao<T> {
 
-    Collection<T> GetAllItems();
+    Collection<T> getAllItems();
 
-    T GetItem(int id);
+    T getItem(int id);
 
-    void Create(T item);
+    void create(T item);
 
-    void Update(T item);
+    void update(T item);
 
-    void Delete(int id);
+    void delete(int id);
 }

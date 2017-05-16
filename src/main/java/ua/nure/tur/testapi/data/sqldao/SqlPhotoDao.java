@@ -18,7 +18,7 @@ import java.util.Collection;
 public class SqlPhotoDao implements PhotoDao {
 
     @Override
-    public Collection<Photo> GetAllItems() {
+    public Collection<Photo> getAllItems() {
         Collection<Photo> Photos;
         try {
             Connection connection = DbConnector.getConnection();
@@ -41,7 +41,7 @@ public class SqlPhotoDao implements PhotoDao {
     }
 
     @Override
-    public Photo GetItem(int id) {
+    public Photo getItem(int id) {
         Photo Photo = null;
 
         try {
@@ -66,7 +66,7 @@ public class SqlPhotoDao implements PhotoDao {
     }
 
     @Override
-    public void Create(Photo item) {
+    public void create(Photo item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -92,7 +92,7 @@ public class SqlPhotoDao implements PhotoDao {
     }
 
     @Override
-    public void Update(Photo item) {
+    public void update(Photo item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -120,7 +120,7 @@ public class SqlPhotoDao implements PhotoDao {
     }
 
     @Override
-    public void Delete(int id) {
+    public void delete(int id) {
         try {
             Connection connection = DbConnector.getConnection();
 

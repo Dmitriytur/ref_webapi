@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e39f66d-9835-4b92-8cbb-9583be501a43" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Shop.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/domain/Dao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/Dao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/domain/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/domain/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/domain/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/util/DbConnector.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/DbConnector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/util/Mapper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/domain/Dao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/domain/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/domain/UserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/entity/Shop.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/util/DbConnector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/util/Mapper.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/entity/State.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/entity/State.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/security/CustomAuthenticationManager.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/security/CustomAuthenticationManager.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/web/AccountController.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/web/AccountController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/web/TestController.class" afterPath="$PROJECT_DIR$/target/classes/ua/nure/tur/testapi/web/TestController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/Dao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/Dao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlCameraDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlCameraDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlNotificationDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlNotificationDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPermissionDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPermissionDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPhotoDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPhotoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlStateDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlStateDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/domain/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/domain/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/State.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/security/CustomAuthenticationManager.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/security/CustomAuthenticationManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/AccountController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/TestController.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/TestController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,28 +42,77 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/State.java">
+      <file leaf-file-name="Notification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlNotificationDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlNotificationDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
               <folding>
-                <element signature="e#1607#1608#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
-                <element signature="e#1672#1673#0" expanded="true" />
-                <element signature="e#1704#1705#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Photo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Photo.java">
+      <file leaf-file-name="Mapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="2057">
+              <caret line="132" column="13" lean-forward="false" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
               <folding>
-                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlUserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding>
+                <element signature="method#getAllItems#0;class#SqlUserDao#0" expanded="false" />
+                <element signature="method#getItem#0;class#SqlUserDao#0" expanded="false" />
+                <element signature="method#update#0;class#SqlUserDao#0" expanded="false" />
+                <element signature="method#delete#0;class#SqlUserDao#0" expanded="false" />
+                <element signature="method#findUserByUserName#0;class#SqlUserDao#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBInitializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/DBInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,63 +121,11 @@
       <file leaf-file-name="SqlStateDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlStateDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#GetAllItems#0;class#SqlStateDao#0" expanded="false" />
-                <element signature="method#GetItem#0;class#SqlStateDao#0" expanded="false" />
-                <element signature="method#Create#0;class#SqlStateDao#0" expanded="false" />
-                <element signature="method#Update#0;class#SqlStateDao#0" expanded="false" />
-                <element signature="method#Delete#0;class#SqlStateDao#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlNotificationDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlNotificationDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-              <folding>
-                <element signature="method#GetAllItems#0;class#SqlNotificationDao#0" expanded="false" />
-                <element signature="method#GetItem#0;class#SqlNotificationDao#0" expanded="false" />
-                <element signature="method#Create#0;class#SqlNotificationDao#0" expanded="false" />
-                <element signature="method#Update#0;class#SqlNotificationDao#0" expanded="false" />
-                <element signature="method#Delete#0;class#SqlNotificationDao#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlCameraDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlCameraDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="139" column="1" lean-forward="true" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
-              <folding>
-                <element signature="method#GetAllItems#0;class#SqlCameraDao#0" expanded="false" />
-                <element signature="method#GetItem#0;class#SqlCameraDao#0" expanded="false" />
-                <element signature="method#Create#0;class#SqlCameraDao#0" expanded="false" />
-                <element signature="method#Update#0;class#SqlCameraDao#0" expanded="false" />
-                <element signature="method#Delete#0;class#SqlCameraDao#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlPhotoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPhotoDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#GetAllItems#0;class#SqlPhotoDao#0" expanded="false" />
-                <element signature="method#GetItem#0;class#SqlPhotoDao#0" expanded="false" />
-                <element signature="method#Update#0;class#SqlPhotoDao#0" expanded="false" />
-                <element signature="method#Delete#0;class#SqlPhotoDao#0" expanded="false" />
+                <element signature="method#delete#0;class#SqlStateDao#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,51 +134,33 @@
       <file leaf-file-name="SqlPermissionDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPermissionDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="59" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state relative-caret-position="799">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
-                <element signature="method#GetItem#0;class#SqlPermissionDao#0" expanded="false" />
-                <element signature="method#Create#0;class#SqlPermissionDao#0" expanded="false" />
-                <element signature="method#Update#0;class#SqlPermissionDao#0" expanded="false" />
-                <element signature="method#Delete#0;class#SqlPermissionDao#0" expanded="false" />
+                <element signature="method#getItem#0;class#SqlPermissionDao#0" expanded="false" />
+                <element signature="method#update#0;class#SqlPermissionDao#0" expanded="false" />
+                <element signature="method#delete#0;class#SqlPermissionDao#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notification.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java">
+      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="238">
+              <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java">
+      <file leaf-file-name="Permission.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Permission.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlUserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="91" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-              <folding>
-                <element signature="method#GetAllItems#0;class#SqlUserDao#0" expanded="false" />
-                <element signature="method#GetItem#0;class#SqlUserDao#0" expanded="false" />
-                <element signature="method#Create#0;class#SqlUserDao#0" expanded="false" />
-                <element signature="method#Update#0;class#SqlUserDao#0" expanded="false" />
-                <element signature="method#Delete#0;class#SqlUserDao#0" expanded="false" />
-                <element signature="method#findUserByUserName#0;class#SqlUserDao#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -192,6 +182,7 @@
       <find>Photo</find>
       <find>Permission</find>
       <find>Notification</find>
+      <find>new Date(System.currentTimeMillis())));</find>
     </findStrings>
     <replaceStrings>
       <replace>State</replace>
@@ -199,6 +190,7 @@
       <replace>Permission</replace>
       <replace>Notification</replace>
       <replace>Camera</replace>
+      <replace>date));</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -212,10 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/service/ShopService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/controller/ShopController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/dao/ShopDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/security/JWTAuthenticationFilter.java" />
@@ -237,12 +225,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/domain/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/util/Mapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/TestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/security/JWTLoginFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/security/CustomAuthenticationManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/AccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/Specification.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/Repository.java" />
@@ -255,14 +241,20 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/PermissionDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/CameraDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/NotificationDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/State.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlStateDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPhotoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlCameraDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/Dao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/DBInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/State.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPermissionDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlNotificationDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlCameraDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/DBInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlStateDao.java" />
       </list>
     </option>
   </component>
@@ -327,7 +319,6 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -488,36 +479,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mySpringTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mySpringTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -592,6 +553,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -610,6 +572,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="ua.nure.tur.testapi.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="mySpringTest" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DBInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.nure.tur.testapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ua.nure.tur.testapi.DBInitializer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -826,12 +808,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DBInitializer" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.DBInitializer" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -867,7 +851,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19642857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -877,6 +860,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -887,7 +871,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -896,17 +880,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/service/ShopService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/service/ProductService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/ShopController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/ProductController.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.2.RELEASE/spring-security-core-4.2.2.RELEASE.jar!/org/springframework/security/core/Authentication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/security/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -992,20 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <element signature="e#238#239#0" expanded="false" />
-            <element signature="e#293#294#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,9 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,54 +986,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Shop.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/DbConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/Specification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/Specification.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/PhotoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,15 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,15 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/StateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,48 +1034,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="264" column="9" lean-forward="false" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="678" column="18" lean-forward="false" selection-start-line="678" selection-start-column="18" selection-end-line="678" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-          <folding>
-            <element signature="e#1607#1608#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1672#1673#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,108 +1046,219 @@
         <state relative-caret-position="374">
           <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
-            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/StateDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="163" column="11" lean-forward="false" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlCameraDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
-            <element signature="method#GetAllItems#0;class#SqlUserDao#0" expanded="false" />
-            <element signature="method#GetItem#0;class#SqlUserDao#0" expanded="false" />
-            <element signature="method#Create#0;class#SqlUserDao#0" expanded="false" />
-            <element signature="method#Update#0;class#SqlUserDao#0" expanded="false" />
-            <element signature="method#Delete#0;class#SqlUserDao#0" expanded="false" />
-            <element signature="method#findUserByUserName#0;class#SqlUserDao#0" expanded="false" />
+            <element signature="method#getAllItems#0;class#SqlCameraDao#0" expanded="false" />
+            <element signature="method#getItem#0;class#SqlCameraDao#0" expanded="false" />
+            <element signature="method#create#0;class#SqlCameraDao#0" expanded="false" />
+            <element signature="method#update#0;class#SqlCameraDao#0" expanded="false" />
+            <element signature="method#delete#0;class#SqlCameraDao#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPhotoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="527">
           <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#GetAllItems#0;class#SqlPhotoDao#0" expanded="false" />
-            <element signature="method#GetItem#0;class#SqlPhotoDao#0" expanded="false" />
-            <element signature="method#Update#0;class#SqlPhotoDao#0" expanded="false" />
-            <element signature="method#Delete#0;class#SqlPhotoDao#0" expanded="false" />
+            <element signature="method#getAllItems#0;class#SqlPhotoDao#0" expanded="false" />
+            <element signature="method#getItem#0;class#SqlPhotoDao#0" expanded="false" />
+            <element signature="method#update#0;class#SqlPhotoDao#0" expanded="false" />
+            <element signature="method#delete#0;class#SqlPhotoDao#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/Timestamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="545" column="12" lean-forward="false" selection-start-line="545" selection-start-column="12" selection-end-line="545" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/interfaces/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="128" column="9" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/DbConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/6.0.6/mysql-connector-java-6.0.6.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/6.0.6/mysql-connector-java-6.0.6.jar!/com/mysql/cj/core/conf/url/ConnectionUrl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Permission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlPermissionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="59" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        <state relative-caret-position="799">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <element signature="method#GetItem#0;class#SqlPermissionDao#0" expanded="false" />
-            <element signature="method#Create#0;class#SqlPermissionDao#0" expanded="false" />
-            <element signature="method#Update#0;class#SqlPermissionDao#0" expanded="false" />
-            <element signature="method#Delete#0;class#SqlPermissionDao#0" expanded="false" />
+            <element signature="method#getItem#0;class#SqlPermissionDao#0" expanded="false" />
+            <element signature="method#update#0;class#SqlPermissionDao#0" expanded="false" />
+            <element signature="method#delete#0;class#SqlPermissionDao#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="method#getAllItems#0;class#SqlUserDao#0" expanded="false" />
+            <element signature="method#getItem#0;class#SqlUserDao#0" expanded="false" />
+            <element signature="method#update#0;class#SqlUserDao#0" expanded="false" />
+            <element signature="method#delete#0;class#SqlUserDao#0" expanded="false" />
+            <element signature="method#findUserByUserName#0;class#SqlUserDao#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlNotificationDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+        <state relative-caret-position="680">
+          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
           <folding>
-            <element signature="method#GetAllItems#0;class#SqlNotificationDao#0" expanded="false" />
-            <element signature="method#GetItem#0;class#SqlNotificationDao#0" expanded="false" />
-            <element signature="method#Create#0;class#SqlNotificationDao#0" expanded="false" />
-            <element signature="method#Update#0;class#SqlNotificationDao#0" expanded="false" />
-            <element signature="method#Delete#0;class#SqlNotificationDao#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/entity/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/web/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/util/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="132" column="13" lean-forward="false" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+          <folding>
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlStateDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="124" column="50" lean-forward="true" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#GetAllItems#0;class#SqlStateDao#0" expanded="false" />
-            <element signature="method#GetItem#0;class#SqlStateDao#0" expanded="false" />
-            <element signature="method#Create#0;class#SqlStateDao#0" expanded="false" />
-            <element signature="method#Update#0;class#SqlStateDao#0" expanded="false" />
-            <element signature="method#Delete#0;class#SqlStateDao#0" expanded="false" />
+            <element signature="method#delete#0;class#SqlStateDao#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/data/sqldao/SqlCameraDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/DBInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="139" column="1" lean-forward="true" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="method#GetAllItems#0;class#SqlCameraDao#0" expanded="false" />
-            <element signature="method#GetItem#0;class#SqlCameraDao#0" expanded="false" />
-            <element signature="method#Create#0;class#SqlCameraDao#0" expanded="false" />
-            <element signature="method#Update#0;class#SqlCameraDao#0" expanded="false" />
-            <element signature="method#Delete#0;class#SqlCameraDao#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/tur/testapi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
           </folding>
         </state>
       </provider>

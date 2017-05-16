@@ -10,13 +10,16 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.GregorianCalendar;
 
 public class SqlStateDao implements StateDao {
 
     @Override
-    public Collection<State> GetAllItems() {
+    public Collection<State> getAllItems() {
         Collection<State> states;
         try {
             Connection connection = DbConnector.getConnection();
@@ -39,7 +42,7 @@ public class SqlStateDao implements StateDao {
     }
 
     @Override
-    public State GetItem(int id) {
+    public State getItem(int id) {
         State State = null;
 
         try {
@@ -64,7 +67,7 @@ public class SqlStateDao implements StateDao {
     }
 
     @Override
-    public void Create(State item) {
+    public void create(State item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -76,9 +79,11 @@ public class SqlStateDao implements StateDao {
                     "`breathing`,\n" +
                     "`hearth`,\n" +
                     "`time`)\n" +
-                    "VALUES (?, ?, ?, ?, ?, ?, ?, );";
+                    "VALUES (?, ?, ?, ?, ?, ?, ?);";
 
             PreparedStatement statement = connection.prepareStatement(query);
+
+            DateFormat dateFormat = Mapper.getDateFormat();
 
             statement.setInt(1, item.getUserId());
             statement.setDouble(2, item.getX());
@@ -86,7 +91,7 @@ public class SqlStateDao implements StateDao {
             statement.setDouble(4, item.getTemperature());
             statement.setInt(5, item.getBreathing());
             statement.setInt(6, item.getHearth());
-            statement.setDate(7,   item.getTime());
+            statement.setString (7,   dateFormat.format(item.getTime()));
 
             statement.executeUpdate();
 
@@ -98,7 +103,7 @@ public class SqlStateDao implements StateDao {
     }
 
     @Override
-    public void Update(State item) {
+    public void update(State item) {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -115,13 +120,15 @@ public class SqlStateDao implements StateDao {
 
             PreparedStatement statement = connection.prepareStatement(query);
 
+            DateFormat dateFormat = Mapper.getDateFormat();
+
             statement.setInt(1, item.getUserId());
             statement.setDouble(2, item.getX());
             statement.setDouble(3, item.getY());
             statement.setDouble(4, item.getTemperature());
             statement.setInt(5, item.getBreathing());
             statement.setInt(6, item.getHearth());
-            statement.setDate(7,   item.getTime());
+            statement.setString (7,   dateFormat.format(item.getTime()));
             statement.setInt(8, item.getId());
 
             statement.executeUpdate();
@@ -134,7 +141,7 @@ public class SqlStateDao implements StateDao {
     }
 
     @Override
-    public void Delete(int id) {
+    public void delete(int id) {
         try {
             Connection connection = DbConnector.getConnection();
 

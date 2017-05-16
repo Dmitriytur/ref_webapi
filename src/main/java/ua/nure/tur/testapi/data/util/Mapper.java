@@ -4,10 +4,20 @@ import ua.nure.tur.testapi.entity.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 
 public class Mapper {
+
+    private static DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+    public static DateFormat getDateFormat(){
+        return dateFormat;
+    }
 
     public static Collection<User> toUsers(ResultSet rs) throws SQLException {
 
@@ -45,7 +55,16 @@ public class Mapper {
             item.setTemperature(rs.getDouble("temperature"));
             item.setBreathing(rs.getInt("breathing"));
             item.setHearth(rs.getInt("hearth"));
-            item.setTime(rs.getDate("time"));
+
+            String time = rs.getString("time");
+            Date date = null;
+            try {
+                date = dateFormat.parse(time);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            item.setTime(date);
+
 
             items.add(item);
         }
@@ -103,7 +122,17 @@ public class Mapper {
             item.setId(rs.getInt("id"));
             item.setUserId(rs.getInt("user_id"));
             item.setMessage(rs.getString("message"));
-            item.setTime(rs.getDate("time"));
+
+            String time = rs.getString("time");
+
+            Date date = null;
+            try {
+                date = dateFormat.parse(time);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            item.setTime(date);
+
             item.setRead(rs.getBoolean("is_read"));
 
             items.add(item);
