@@ -22,13 +22,11 @@ public class Mapper {
     public static Collection<User> toUsers(ResultSet rs) throws SQLException {
 
         ArrayList<User> items = new ArrayList<>();
-
         while (rs.next())
         {
             User item = new User();
 
             item.setId(rs.getInt("id"));
-            item.setUsername(rs.getString("username"));
             item.setPassword(rs.getString("password"));
             item.setEmail(rs.getString("email"));
             item.setFirstname(rs.getString("firstname"));

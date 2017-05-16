@@ -11,10 +11,12 @@ public class UserService {
     private SqlUserDao sqlUserRepository = new SqlUserDao();
 
     public User findUserByUsername(String username){
+
         return sqlUserRepository.findUserByUserName(username);
     }
 
     public void addUser(User user){
+
         sqlUserRepository.create(user);
     }
 }

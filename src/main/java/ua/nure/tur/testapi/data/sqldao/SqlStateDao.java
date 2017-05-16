@@ -1,6 +1,7 @@
 package ua.nure.tur.testapi.data.sqldao;
 
 import com.fasterxml.jackson.databind.ser.std.SqlDateSerializer;
+import org.springframework.stereotype.Repository;
 import ua.nure.tur.testapi.data.interfaces.StateDao;
 import ua.nure.tur.testapi.data.util.DbConnector;
 import ua.nure.tur.testapi.data.util.Mapper;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.GregorianCalendar;
 
+@Repository
 public class SqlStateDao implements StateDao {
 
     @Override
