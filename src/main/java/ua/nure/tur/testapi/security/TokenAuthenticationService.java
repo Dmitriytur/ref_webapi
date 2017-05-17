@@ -4,16 +4,10 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import ua.nure.tur.testapi.entities.User;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.OutputStream;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 import static java.util.Collections.emptyList;
 
@@ -24,21 +18,14 @@ public class TokenAuthenticationService {
     static private final String TOKEN_PREFIX = "Bearer";
     static private final String HEADER_STRING = "Authorization";
 
-    static void addAuthentication(HttpServletResponse res, int id, String role) {
-        Map<String, Object> claims = new HashMap<>();
+    public static String getToken(User user) {
         String JWT = Jwts.builder()
-                .setSubject(Integer.toString(id))
-                .setAudience(role)
+                .setSubject(Integer.toString(user.getId()))
+                .setAudience(user.getRole())
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .signWith(SignatureAlgorithm.HS512, SECRET)
                 .compact();
-
-        try {
-            OutputStream outputStream = res.getOutputStream();
-            outputStream.write((TOKEN_PREFIX + ' ' + JWT).getBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        return TOKEN_PREFIX + ' ' + JWT;
     }
 
     static Authentication getAuthentication(HttpServletRequest request) {

@@ -1,20 +1,26 @@
 package ua.nure.tur.testapi.models;
 
-public class MessageHandler {
+public class MessageHandler<T> {
 
     private int status;
 
     private String message;
 
-    private String data;
+    private T data;
 
     public MessageHandler() {}
 
-    public MessageHandler(int status, String message, String data) {
+    public MessageHandler(int status, String message) {
+        this.status = status;
+        this.message = message;
+    }
+
+    public MessageHandler(int status, String message, T data) {
         this.status = status;
         this.message = message;
         this.data = data;
     }
+
 
     public int getStatus() {
         return status;
@@ -32,11 +38,11 @@ public class MessageHandler {
         this.message = message;
     }
 
-    public String getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(T data) {
         this.data = data;
     }
 }

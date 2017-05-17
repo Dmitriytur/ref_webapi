@@ -1,6 +1,6 @@
 package ua.nure.tur.testapi.data.interfaces;
 
-import ua.nure.tur.testapi.exeption.AddFailureExeption;
+import ua.nure.tur.testapi.exeption.AddFailureException;
 
 import java.util.Collection;
 
@@ -10,7 +10,7 @@ public interface Dao<T> {
 
     T getItem(int id);
 
-    void create(T item) throws AddFailureExeption;
+    void create(T item) throws AddFailureException;
 
     void update(T item);
 

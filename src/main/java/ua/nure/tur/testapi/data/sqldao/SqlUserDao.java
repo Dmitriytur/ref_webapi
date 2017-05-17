@@ -6,7 +6,7 @@ import ua.nure.tur.testapi.data.interfaces.UserDao;
 import ua.nure.tur.testapi.entities.User;
 import ua.nure.tur.testapi.data.util.DbConnector;
 import ua.nure.tur.testapi.data.util.Mapper;
-import ua.nure.tur.testapi.exeption.AddFailureExeption;
+import ua.nure.tur.testapi.exeption.AddFailureException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -67,7 +67,7 @@ public class SqlUserDao implements UserDao {
     }
 
     @Override
-    public void create(User item) throws AddFailureExeption {
+    public void create(User item) throws AddFailureException {
         try {
             Connection connection = DbConnector.getConnection();
 
@@ -91,7 +91,7 @@ public class SqlUserDao implements UserDao {
         }
         catch (SQLException ex){
             System.err.println(ex.getMessage());
-            throw new AddFailureExeption(ex.getMessage());
+            throw new AddFailureException(ex.getMessage());
         }
     }
 
