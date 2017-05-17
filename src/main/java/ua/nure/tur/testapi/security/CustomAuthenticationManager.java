@@ -5,7 +5,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import ua.nure.tur.testapi.entity.User;
+import ua.nure.tur.testapi.entities.User;
 import ua.nure.tur.testapi.domain.UserService;
 
 import java.util.Collections;
@@ -26,7 +26,6 @@ public class CustomAuthenticationManager implements AuthenticationManager {
         if (!password.equals(user.getPassword())) {
             throw new BadCredentialsException("Wrong password.");
         }
-
-        return new UsernamePasswordAuthenticationToken(username, password, Collections.emptyList());
+        return new UsernamePasswordAuthenticationToken(user.getId(), user.getRole(), Collections.emptyList());
     }
 }

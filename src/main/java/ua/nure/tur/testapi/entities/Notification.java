@@ -1,4 +1,4 @@
-package ua.nure.tur.testapi.entity;
+package ua.nure.tur.testapi.entities;
 
 import java.util.Date;
 

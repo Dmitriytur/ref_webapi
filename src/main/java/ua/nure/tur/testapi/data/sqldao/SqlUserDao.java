@@ -3,9 +3,10 @@ package ua.nure.tur.testapi.data.sqldao;
 
 import org.springframework.stereotype.Repository;
 import ua.nure.tur.testapi.data.interfaces.UserDao;
-import ua.nure.tur.testapi.entity.User;
+import ua.nure.tur.testapi.entities.User;
 import ua.nure.tur.testapi.data.util.DbConnector;
 import ua.nure.tur.testapi.data.util.Mapper;
+import ua.nure.tur.testapi.exeption.AddFailureExeption;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -66,13 +67,13 @@ public class SqlUserDao implements UserDao {
     }
 
     @Override
-    public void create(User item) {
+    public void create(User item) throws AddFailureExeption {
         try {
             Connection connection = DbConnector.getConnection();
 
             String query = "insert into users " +
-                    "(`username`, `password`, `email`, `firstname`, `secondname`) " +
-                    "VALUES (?, ?, ?, ?, ?)";
+                    "(`username`, `password`, `email`, `firstname`, `secondname`, `role`, `device_key`) " +
+                    "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
             PreparedStatement statement = connection.prepareStatement(query);
 
@@ -81,6 +82,8 @@ public class SqlUserDao implements UserDao {
             statement.setString(3, item.getEmail());
             statement.setString(4, item.getFirstname());
             statement.setString(5, item.getSecondname());
+            statement.setString(6, item.getRole());
+            statement.setString(7, item.getDeviceKey());
 
             statement.executeUpdate();
 
@@ -88,6 +91,7 @@ public class SqlUserDao implements UserDao {
         }
         catch (SQLException ex){
             System.err.println(ex.getMessage());
+            throw new AddFailureExeption(ex.getMessage());
         }
     }
 
@@ -99,18 +103,20 @@ public class SqlUserDao implements UserDao {
             String query = "UPDATE `users`\n" +
                     "SET\n" +
                     "`password` = ?,\n" +
-                    "`email` = ?>,\n" +
                     "`firstname` = ?,\n" +
                     "`secondname` = ?\n" +
+                    "`device_key` = ?\n" +
                     "WHERE `id` = ?;\n";
 
             PreparedStatement statement = connection.prepareStatement(query);
 
             statement.setString(1, item.getPassword());
-            statement.setString(2, item.getEmail());
-            statement.setString(3, item.getFirstname());
-            statement.setString(4, item.getSecondname());
+            statement.setString(2, item.getFirstname());
+            statement.setString(3, item.getSecondname());
+            statement.setString(4, item.getDeviceKey());
             statement.setInt(5, item.getId());
+
+
 
             statement.executeUpdate();
 

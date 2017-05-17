@@ -7,9 +7,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import ua.nure.tur.testapi.entity.User;
+import ua.nure.tur.testapi.entities.User;
 
-import javax.jws.soap.SOAPBinding;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -45,6 +44,6 @@ public class JWTLoginFilter  extends AbstractAuthenticationProcessingFilter {
             HttpServletResponse res, FilterChain chain,
             Authentication auth) throws IOException, ServletException {
         TokenAuthenticationService
-                .addAuthentication(res, auth.getName());
+                .addAuthentication(res, (int)auth.getPrincipal(), auth.getCredentials().toString());
     }
 }

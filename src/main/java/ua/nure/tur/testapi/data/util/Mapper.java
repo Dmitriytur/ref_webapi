@@ -1,6 +1,6 @@
 package ua.nure.tur.testapi.data.util;
 
-import ua.nure.tur.testapi.entity.*;
+import ua.nure.tur.testapi.entities.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -32,6 +32,8 @@ public class Mapper {
             item.setEmail(rs.getString("email"));
             item.setFirstname(rs.getString("firstname"));
             item.setSecondname(rs.getString("secondname"));
+            item.setRole(rs.getString("role"));
+            item.setDeviceKey(rs.getString("device_key"));
 
             items.add(item);
         }
@@ -64,24 +66,6 @@ public class Mapper {
             }
             item.setTime(date);
 
-
-            items.add(item);
-        }
-        return items;
-    }
-
-    public static Collection<Photo> toPhotos(ResultSet rs) throws SQLException {
-
-        ArrayList<Photo> items = new ArrayList<>();
-
-        while (rs.next())
-        {
-            Photo item = new Photo();
-
-            item.setId(rs.getInt("id"));
-            item.setUserId(rs.getInt("user_id"));
-            item.setCameraId(rs.getInt("camera_id"));
-            item.setPhoto(rs.getString("photo"));
 
             items.add(item);
         }
@@ -139,23 +123,6 @@ public class Mapper {
         return items;
     }
 
-
-    public static Collection<Camera> toCameras(ResultSet rs) throws SQLException {
-
-        ArrayList<Camera> items = new ArrayList<>();
-
-        while (rs.next())
-        {
-            Camera item = new Camera();
-
-            item.setId(rs.getInt("id"));
-            item.setX(rs.getDouble("location_x"));
-            item.setY(rs.getDouble("location_y"));
-
-            items.add(item);
-        }
-        return items;
-    }
 
 }
 

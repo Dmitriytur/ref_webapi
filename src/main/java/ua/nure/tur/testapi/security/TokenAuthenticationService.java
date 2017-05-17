@@ -4,12 +4,16 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import static java.util.Collections.emptyList;
 
@@ -20,9 +24,11 @@ public class TokenAuthenticationService {
     static private final String TOKEN_PREFIX = "Bearer";
     static private final String HEADER_STRING = "Authorization";
 
-    static void addAuthentication(HttpServletResponse res, String username) {
+    static void addAuthentication(HttpServletResponse res, int id, String role) {
+        Map<String, Object> claims = new HashMap<>();
         String JWT = Jwts.builder()
-                .setSubject(username)
+                .setSubject(Integer.toString(id))
+                .setAudience(role)
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .signWith(SignatureAlgorithm.HS512, SECRET)
                 .compact();
@@ -38,13 +44,18 @@ public class TokenAuthenticationService {
     static Authentication getAuthentication(HttpServletRequest request) {
         String token = request.getHeader(HEADER_STRING);
         if (token != null) {
-            String user = Jwts.parser()
+            String id = Jwts.parser()
                     .setSigningKey(SECRET)
                     .parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
                     .getBody()
                     .getSubject();
-            return user != null ?
-                    new UsernamePasswordAuthenticationToken(user, null, emptyList()) :
+            String role = Jwts.parser()
+                    .setSigningKey(SECRET)
+                    .parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
+                    .getBody()
+                    .getAudience();
+            return id != null && role != null ?
+                    new UsernamePasswordAuthenticationToken(id, role, emptyList()) :
                     null;
         }
         return null;

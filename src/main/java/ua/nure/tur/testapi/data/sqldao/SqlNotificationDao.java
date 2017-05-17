@@ -1,20 +1,19 @@
 package ua.nure.tur.testapi.data.sqldao;
 
 
-        import org.springframework.stereotype.Repository;
-        import ua.nure.tur.testapi.data.interfaces.NotificationDao;
-        import ua.nure.tur.testapi.entity.Notification;
-        import ua.nure.tur.testapi.data.util.DbConnector;
-        import ua.nure.tur.testapi.data.util.Mapper;
+import org.springframework.stereotype.Repository;
+import ua.nure.tur.testapi.data.interfaces.NotificationDao;
+import ua.nure.tur.testapi.entities.Notification;
+import ua.nure.tur.testapi.data.util.DbConnector;
+import ua.nure.tur.testapi.data.util.Mapper;
 
-        import java.sql.Connection;
-        import java.sql.PreparedStatement;
-        import java.sql.ResultSet;
-        import java.sql.SQLException;
-        import java.text.DateFormat;
-        import java.text.SimpleDateFormat;
-        import java.util.ArrayList;
-        import java.util.Collection;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 
 @Repository
 public class SqlNotificationDao implements NotificationDao {
@@ -34,8 +33,7 @@ public class SqlNotificationDao implements NotificationDao {
             Notifications = Mapper.toNotifications(resultSet);
 
             connection.close();
-        }
-        catch (SQLException ex){
+        } catch (SQLException ex) {
             System.err.println(ex.getMessage());
             Notifications = new ArrayList<>();
         }
@@ -60,8 +58,7 @@ public class SqlNotificationDao implements NotificationDao {
             Notification = Mapper.toNotifications(resultSet).stream().findFirst().orElse(null);
 
             connection.close();
-        }
-        catch (SQLException ex){
+        } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
         return Notification;
@@ -91,8 +88,7 @@ public class SqlNotificationDao implements NotificationDao {
             statement.executeUpdate();
 
             connection.close();
-        }
-        catch (SQLException ex){
+        } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
     }
@@ -123,8 +119,7 @@ public class SqlNotificationDao implements NotificationDao {
             statement.executeUpdate();
 
             connection.close();
-        }
-        catch (SQLException ex){
+        } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
     }
@@ -143,12 +138,10 @@ public class SqlNotificationDao implements NotificationDao {
             statement.executeUpdate();
 
             connection.close();
-        }
-        catch (SQLException ex){
+        } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
     }
-
 
 
 }

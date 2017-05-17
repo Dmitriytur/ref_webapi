@@ -3,7 +3,7 @@ package ua.nure.tur.testapi.data.sqldao;
 
 import org.springframework.stereotype.Repository;
 import ua.nure.tur.testapi.data.interfaces.PermissionDao;
-import ua.nure.tur.testapi.entity.Permission;
+import ua.nure.tur.testapi.entities.Permission;
 import ua.nure.tur.testapi.data.util.DbConnector;
 import ua.nure.tur.testapi.data.util.Mapper;
 

@@ -1,21 +1,18 @@
 package ua.nure.tur.testapi.data.sqldao;
 
-import com.fasterxml.jackson.databind.ser.std.SqlDateSerializer;
 import org.springframework.stereotype.Repository;
 import ua.nure.tur.testapi.data.interfaces.StateDao;
 import ua.nure.tur.testapi.data.util.DbConnector;
 import ua.nure.tur.testapi.data.util.Mapper;
-import ua.nure.tur.testapi.entity.State;
+import ua.nure.tur.testapi.entities.State;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.GregorianCalendar;
 
 @Repository
 public class SqlStateDao implements StateDao {
