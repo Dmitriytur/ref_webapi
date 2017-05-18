@@ -172,5 +172,30 @@ public class SqlUserDao implements UserDao {
         return user;
     }
 
+    @Override
+    public User getUserByDeviceKey(String deviceKey) {
+        User user = null;
+
+        try {
+            Connection connection = DbConnector.getConnection();
+
+            String query = "select * from users where device_key = ?";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+
+            statement.setString(1, deviceKey);
+
+            ResultSet resultSet = statement.executeQuery();
+
+            user = Mapper.toUsers(resultSet).stream().findFirst().orElse(null);
+
+            connection.close();
+        }
+        catch (SQLException ex){
+            System.err.println(ex.getMessage());
+        }
+        return user;
+    }
+
 
 }

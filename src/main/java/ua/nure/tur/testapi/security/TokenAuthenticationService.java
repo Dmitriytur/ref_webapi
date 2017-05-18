@@ -31,17 +31,17 @@ public class TokenAuthenticationService {
     static Authentication getAuthentication(HttpServletRequest request) {
         String token = request.getHeader(HEADER_STRING);
         if (token != null) {
-            String id = Jwts.parser()
+            int id = Integer.parseInt(Jwts.parser()
                     .setSigningKey(SECRET)
                     .parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
                     .getBody()
-                    .getSubject();
+                    .getSubject());
             String role = Jwts.parser()
                     .setSigningKey(SECRET)
                     .parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
                     .getBody()
                     .getAudience();
-            return id != null && role != null ?
+            return id != 0 && role != null ?
                     new UsernamePasswordAuthenticationToken(id, role, emptyList()) :
                     null;
         }

@@ -86,7 +86,6 @@ public class Mapper {
             item.setUserTo(rs.getInt("user_to"));
             item.setLocation(rs.getBoolean("location"));
             item.setBiometry(rs.getBoolean("biometry"));
-            item.setPhoto(rs.getBoolean("photo"));
 
             items.add(item);
         }

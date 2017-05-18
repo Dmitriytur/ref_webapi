@@ -7,18 +7,16 @@ public class Permission {
     private int userTo;
     private boolean location;
     private boolean biometry;
-    private boolean photo;
 
     public Permission() {}
 
     public Permission(int id, int userFrom, int userTo,
-                      boolean location, boolean biometry, boolean photo) {
+                      boolean location, boolean biometry) {
         this.id = id;
         this.userFrom = userFrom;
         this.userTo = userTo;
         this.location = location;
         this.biometry = biometry;
-        this.photo = photo;
     }
 
     public int getId() {
@@ -59,13 +57,5 @@ public class Permission {
 
     public void setBiometry(boolean biometry) {
         this.biometry = biometry;
-    }
-
-    public boolean isPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(boolean photo) {
-        this.photo = photo;
     }
 }

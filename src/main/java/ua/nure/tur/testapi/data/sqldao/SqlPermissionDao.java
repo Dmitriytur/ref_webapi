@@ -75,8 +75,7 @@ public class SqlPermissionDao implements PermissionDao {
                     "`user_to`,\n" +
                     "`location`,\n" +
                     "`biometry`,\n" +
-                    "`photo`)\n" +
-                    "VALUES (?, ?, ?, ?, ?);";
+                    "VALUES (?, ?, ?, ?);";
 
 
             PreparedStatement statement = connection.prepareStatement(query);
@@ -85,7 +84,6 @@ public class SqlPermissionDao implements PermissionDao {
             statement.setInt(2, item.getUserTo());
             statement.setBoolean(3, item.isLocation());
             statement.setBoolean(4, item.isBiometry());
-            statement.setBoolean(5, item.isPhoto());
 
             statement.executeUpdate();
 
@@ -107,7 +105,6 @@ public class SqlPermissionDao implements PermissionDao {
                     "`user_to` = ?,\n" +
                     "`location` = ?,\n" +
                     "`biometry` = ?,\n" +
-                    "`photo` = ?\n" +
                     "WHERE `id` = ?;";
 
             PreparedStatement statement = connection.prepareStatement(query);
@@ -116,8 +113,7 @@ public class SqlPermissionDao implements PermissionDao {
             statement.setInt(2, item.getUserTo());
             statement.setBoolean(3, item.isLocation());
             statement.setBoolean(4, item.isBiometry());
-            statement.setBoolean(5, item.isPhoto());
-            statement.setInt(6, item.getId());
+            statement.setInt(5, item.getId());
 
             statement.executeUpdate();
 
@@ -149,5 +145,29 @@ public class SqlPermissionDao implements PermissionDao {
     }
 
 
+    @Override
+    public Permission getByFromAndToId(int idFrom, int idTo) {
+        Permission permission = null;
 
+        try {
+            Connection connection = DbConnector.getConnection();
+
+            String query = "select * from Permissions where user_from = ? and user_to = ?";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+
+            statement.setInt(1, idFrom);
+            statement.setInt(2, idTo);
+
+            ResultSet resultSet = statement.executeQuery();
+
+            permission = Mapper.toPermissions(resultSet).stream().findFirst().orElse(null);
+
+            connection.close();
+        }
+        catch (SQLException ex){
+            System.err.println(ex.getMessage());
+        }
+        return permission;
+    }
 }

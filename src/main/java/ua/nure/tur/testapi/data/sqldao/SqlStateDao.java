@@ -158,4 +158,30 @@ public class SqlStateDao implements StateDao {
             System.err.println(ex.getMessage());
         }
     }
+
+    @Override
+    public State getLastState(int id) {
+        State State = null;
+
+        try {
+            Connection connection = DbConnector.getConnection();
+
+            String query = "select * from states where time = (select max(time) from states where user_id = ?) and user_id = ?;";
+
+            PreparedStatement statement = connection.prepareStatement(query);
+
+            statement.setInt(1, id);
+            statement.setInt(2, id);
+
+            ResultSet resultSet = statement.executeQuery();
+
+            State = Mapper.toStates(resultSet).stream().findFirst().orElse(null);
+
+            connection.close();
+        }
+        catch (SQLException ex){
+            System.err.println(ex.getMessage());
+        }
+        return State;
+    }
 }

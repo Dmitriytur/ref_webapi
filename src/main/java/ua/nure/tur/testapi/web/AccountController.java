@@ -23,9 +23,9 @@ public class AccountController {
         return userService.registerUser(user);
     }
 
-    @RequestMapping(value = "/getProfile", method = RequestMethod.GET)
+    @RequestMapping(value = "/profile", method = RequestMethod.GET)
     public MessageHandler<User> profile(Authentication auth){
-        int id = (int) auth.getPrincipal();
+        int id = (int )auth.getPrincipal();
         return userService.getUserById(id);
     }
 
